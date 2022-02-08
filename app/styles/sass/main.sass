@@ -1,0 +1,25 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+
+body
+    font-family: "Quicksand" 16px
+
+/*---Ограничивающий контейнер---*/
+
+.wrapper
+    display: flex
+    overflow: hidden
+    flex-direction: column
+    min-height: 100%
+
+/*-------------*/
+
+.main
+    flex: 1 1 auto
+
+[class*="__container"]
+    max-width: 1240px
+    margin: 0px auto
