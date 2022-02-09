@@ -1,10 +1,12 @@
 // body
 // 	display: none
 
-body
-    font-family: "Quicksand" 16px
+ul
+    margin: 0
+    padding: 0
 
-/*---Ограничивающий контейнер---*/
+a
+    text-decoration: none
 
 .wrapper
     display: flex
@@ -17,6 +19,100 @@ body
 .main
     flex: 1 1 auto
 
+/*---Ограничивающий контейнер---*/
+
 [class*="__container"]
-    max-width: 1240px
+    max-width: 1270px
     margin: 0px auto
+    padding: 0px 15px
+
+    /*---PC---*/
+
+@media (max-width: 1270px)
+    [class*="__container"]
+        max-width: 970px
+
+    /*---TABLET---*/
+
+@media (max-width: 991.98px)
+    [class*="__container"]
+        max-width: 750px
+
+    /*---MOBILE---*/
+
+@media (max-width: 767.98px)
+    [class*="__container"]
+        max-width: none
+
+.header
+
+    &__container
+        display: flex
+        min-height: 80px
+        align-items: center
+
+    &__logo
+        padding: 0px 0px 0px 17px
+
+    &__menu
+        flex: 1 1 auto
+
+    &__button
+        padding: 0px 17px 0px 0px
+        display: flex
+        justify-content: flex-end
+
+    &__media
+        flex: auto
+        justify-content: flex-end
+
+.menu
+    display: flex
+    justify-content: center
+    align-items: center
+
+.menu__list
+    display: flex
+    justify-content: center
+    gap: 42px
+
+.menu__item
+
+.menu__link
+    font-family: Quicksand
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 1.5
+    letter-spacing: 0.05em
+    text-transform: capitalize
+    color: #697CA6
+    text-shadow: 0px 0px 5px #E6E6E6
+
+.button
+    display: inline-block
+    font-family: Quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 13px
+    line-height: 1.6
+    padding: 13px 17px
+    border-radius: 2px
+    letter-spacing: 0.6px
+    transition: background-color 0.3s ease 0s
+
+    &_light-blue
+        background-color: #D2E1FF
+        color: #3A79FF
+
+    &_light-blue:hover
+        background-color: #dde9ff
+
+.media
+    display: flex
+    padding-right: 44px
+
+    &__item
+        margin-left: 33px
+
+    &__link
