@@ -38,6 +38,15 @@ a
     [class*="__container"]
         max-width: 750px
 
+    .header
+        &__button
+            padding-right: 0
+        &__logo
+            padding: 0 8px 0 0
+
+    .menu__list
+        gap: 5px
+
     /*---MOBILE---*/
 
 @media (max-width: 767.98px)
@@ -52,7 +61,8 @@ a
         align-items: center
 
     &__logo
-        padding: 0px 0px 0px 17px
+        padding: 0px 17px
+        justify-content: flex-end
 
     &__menu
         flex: 1 1 auto
