@@ -1,11 +1,10 @@
-.main
 
 .increase
 
     &__container
         height: 570px
         display: flex
-        background: url('../../images/src/chart.svg') no-repeat center
+        background: url('../../images/src/increase/chart.svg') no-repeat center
         background-size: cover
         flex-direction: column
         align-items: center
@@ -15,15 +14,14 @@
         padding: 92px 0
         flex-direction: column
         align-items: center
-    &__block-text
-
-    &__video
-
-    &__image
 
 .block-text
     text-align: center
-    &__title4
+
+    &__title1
+        margin: 16px 0 28px 0
+
+    h4
         font-family: Roboto
         font-style: normal
         font-weight: 700
@@ -32,7 +30,8 @@
         letter-spacing: 0.1em
         text-transform: uppercase
         color: #3D4F9F
-    &__title1
+
+    h1
         font-family: Quicksand
         font-style: normal
         font-weight: 500
@@ -40,7 +39,17 @@
         line-height: 60px
         text-align: center
         color: #3D4F9F
-        margin: 16px 0 28px 0
+
+        span
+            font-weight: 600
+
+    h2
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 36px
+        line-height: 45px
+        color: #3D4F9F
 
         span
             font-weight: 600
@@ -63,7 +72,6 @@
     height: 52px
     width: 52px
     margin-top: 20px
-    &__icon
 
 @media (max-width: 1280px)
     .block-text
@@ -90,3 +98,123 @@
     .block-text
         &__text
             padding: 0
+    .increase
+        &__content
+            padding: 20px 0
+@media (max-width: 330.98px)
+    .increase
+        &__content
+            padding: 10px 0
+
+/*---------------------------------------------------------------*/
+
+.costumers__container
+    height: 145px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.costumers__list
+
+.list-costumers
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    gap: 90px
+
+    &__item
+
+    &__link
+@media (max-width: 1280px)
+    .list-costumers
+        gap: 60px
+@media (max-width: 991.98px)
+    .list-costumers
+        gap: 35px
+
+@media (max-width: 768.98px)
+    .list-costumers
+        gap: 18px
+    .costumers__container
+        height: 90px
+        img
+            width: 80px
+        &__link
+
+@media (max-width: 479.98px)
+    .costumers__container
+        height: 50px
+        img
+            width: 40px
+
+/*---------------------------------------------------------------*/
+
+.manage
+
+    &__container
+        background-color: #F5F8FF
+    &__content
+        display: flex
+        padding: 150px 0 50px 0
+
+    &__block-text
+        flex: 0 0 45%
+        height: 413px
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-direction: column
+        text-align: start
+        padding: 0 20px 0 90px
+        gap: 20px
+
+.block-text__text__second
+    padding: 0
+.manage__button
+    padding: 40px 20px 20px 0
+    height: 43px
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+.button
+
+    &__blue
+        width: 131px
+
+    &__white
+        width: 131px
+
+.manage__image
+    flex: 0 1 55%
+
+@media (max-width: 1280px)
+    .manage
+        &__content
+            flex-direction: column
+            justify-content: center
+        &__block-text
+            padding: 0px 90px
+            flex: 1 1 100%
+            height: 413px
+        &__image
+            width: 100%
+            margin: 50px auto
+@media (max-width: 991.98px)
+    .manage
+        &__image
+            width: 100%
+            margin: 50px auto
+            img
+                width: 100%
+@media (max-width: 768.98px)
+    .manage
+        &__block-text
+            padding: 0px 50px
+
+@media (max-width: 479.98px)
+    .manage
+        &__block-text
+            padding: 0px 25px
