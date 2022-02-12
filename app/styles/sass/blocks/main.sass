@@ -1,0 +1,92 @@
+.main
+
+.increase
+
+    &__container
+        height: 570px
+        display: flex
+        background: url('../../images/src/chart.svg') no-repeat center
+        background-size: cover
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+    &__content
+        display: flex
+        padding: 92px 0
+        flex-direction: column
+        align-items: center
+    &__block-text
+
+    &__video
+
+    &__image
+
+.block-text
+    text-align: center
+    &__title4
+        font-family: Roboto
+        font-style: normal
+        font-weight: 700
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #3D4F9F
+    &__title1
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 48px
+        line-height: 60px
+        text-align: center
+        color: #3D4F9F
+        margin: 16px 0 28px 0
+
+        span
+            font-weight: 600
+
+    &__text
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 29px
+        text-align: center
+        letter-spacing: 0.03em
+        color: #8D96BD
+        padding: 0 370px
+
+.video-increase
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 52px
+    width: 52px
+    margin-top: 20px
+    &__icon
+
+@media (max-width: 1280px)
+    .block-text
+        &__text
+            padding: 0 230px
+
+@media (max-width: 991.98px)
+    .block-text
+        &__text
+            padding: 0 110px
+
+@media (max-width: 768.98px)
+    .increase
+        &__content
+            padding: 50px 0
+    .block-text
+        &__title1
+            font-size: 38px
+
+        &__text
+            padding: 0 90px
+
+@media (max-width: 479.98px)
+    .block-text
+        &__text
+            padding: 0

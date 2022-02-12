@@ -36,7 +36,7 @@ function browsersync() {
 		ghostMode: { clicks: false },
 		notify: false,
 		online: true,
-		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+		// tunnel: 'tavriec01-test', // Attempt to use the URL https://tavriec01-test.loca.lt
 	})
 }
 

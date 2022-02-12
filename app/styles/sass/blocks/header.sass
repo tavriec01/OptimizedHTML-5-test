@@ -77,7 +77,6 @@ a
 
 .button
     display: inline-block
-    height: 43px
     width: 113px
     font-family: Quicksand
     font-style: normal
@@ -111,11 +110,11 @@ a
 
 /*---PC---*/
 
-@media (max-width: 1270px)
+@media (max-width: 1280px)
     [class*="__container"]
         max-width: 970px
 
-    /*---TABLET---*/
+/*---TABLET---*/
 
 @media (max-width: 991.98px)
     [class*="__container"]
@@ -124,7 +123,7 @@ a
 
     .header
         &__button
-            padding: 0
+            padding: auto
         &__logo
             padding: 0 8px 0 0
         &__media
@@ -134,11 +133,10 @@ a
         display: none
     .menu__list
         gap: 15px
-        padding-right: 130px
 
-    /*---MOBILE---*/
+/*---MOBILE---*/
 
-@media (max-width: 767.98px)
+@media (max-width: 768.98px)
     [class*="__container"]
         max-width: none
     .media
@@ -179,17 +177,7 @@ a
         justify-content: space-between
         margin: 0px 0px 0px 15px
 
-    .icon-menu::before, .icon-menu::after
-        content: ""
-        background-color: #000
-        hieght: 2px
-
-    .icon-menu span
-        height: 2px
-        background-color: #000
-
     .close-icon-menu
-
         display: none
         position: relative
         flex: 0 0 30px
