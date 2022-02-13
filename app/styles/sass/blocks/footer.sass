@@ -1,0 +1,61 @@
+
+.footer
+
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 283px
+
+    &__content
+        display: flex
+        height: 43px
+        align-items: center
+        flex-direction: row
+
+    &__logo
+        padding: 0px 17px
+        justify-content: flex-end
+
+    &__menu
+        flex: 1 1 auto
+
+    &__button
+        padding: 0px 17px 0px 0px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+    &__media
+        flex: auto
+        justify-content: flex-end
+
+    &__copyright
+        text-align: left
+        margin: 28px 0px 0px 117px
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.05em
+        text-transform: capitalize
+
+        color: #AEB8D0
+
+@media (max-width: 991.98px)
+
+    .footer
+        &__button
+            padding: auto
+        &__logo
+            padding: 0 8px 0 0
+        &__media
+            display: none
+
+@media (max-width: 479.98px)
+    .footer
+        &__media
+            display: none
+    .media
+        display: none

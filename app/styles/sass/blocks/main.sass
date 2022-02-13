@@ -30,6 +30,7 @@
         letter-spacing: 0.1em
         text-transform: uppercase
         color: #3D4F9F
+        margin-bottom: 10px
 
     h1
         font-family: Quicksand
@@ -53,6 +54,15 @@
 
         span
             font-weight: 600
+
+    h3
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 30px
+        text-align: center
+        color: #3D4F9F
 
     &__text
         font-family: Roboto
@@ -149,7 +159,8 @@
             width: 40px
 
 /*---------------------------------------------------------------*/
-
+.second
+    padding: 0
 .manage
 
     &__container
@@ -169,8 +180,6 @@
         padding: 0 20px 0 90px
         gap: 20px
 
-.block-text__text__second
-    padding: 0
 .manage__button
     padding: 40px 20px 20px 0
     height: 43px
@@ -218,3 +227,670 @@
     .manage
         &__block-text
             padding: 0px 25px
+/*---------------------------------------------------------------*/
+
+.features
+
+    &__container
+        background: url('../../images/src/features/clouds.svg') no-repeat center
+        background-size: 100%
+        height: 885px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__content
+        width: 76.0
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+    &__block-text
+        margin-bottom: 60px
+
+.block-text
+
+    &__title4__third
+        margin-bottom: 30px
+
+    &__title3
+
+.features__list
+
+.list-features
+    display: flex
+    flex-direction: row
+    gap: 50px
+
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 140px
+        gap: 35px
+
+    &__item__image
+        height: 69px
+        width: 69px
+
+    &__item__link
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 25px
+        text-align: center
+        color: #4074F8
+
+    &__item__text
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 11px
+        line-height: 19px
+        text-align: center
+        color: #ADB3CB
+
+.features__button
+    display: flex
+    margin-top: 80px
+    width: 60%
+    justify-content: center
+    align-items: center
+
+.button__middle-text
+    display: flex
+    flex-direction: row
+    width: 130px
+    justify-content: space-evenly
+    align-items: center
+    div
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 11px
+        line-height: 19px
+        text-align: center
+        color: #ADB3CB
+    span
+        display: block
+        content: ""
+        height: 1px
+        width: 15px
+        background-color: #DAE4FE
+        border: 0.5px solid #DAE4FE
+
+@media (max-width: 768.98px)
+    .list-features
+        flex-wrap: wrap
+        justify-content: center
+        gap: 15px
+    .features__button
+        width: 80%
+    .button__middle-text
+        width: 100px
+/*---------------------------------------------------------------*/
+
+.stats
+
+    &__container
+        height: 342px
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding: 0
+
+    &__speed, &__people
+        height: 342px
+        flex: 0 1 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 0em 5.9em
+        img
+            width: 65px
+            height: 65px
+        h1
+            font-family: Quicksand
+            font-style: normal
+            font-weight: normal
+            font-size: 48px
+            line-height: 83px
+            letter-spacing: 0.03em
+    &__speed
+        background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
+        align-items: flex-end
+        h1
+            color: #FFFFFF
+    &__people
+        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%)
+        align-items: flex-start
+        h1
+            color: #5E80FF
+.block-text
+    &__speed, &__people
+        display: flex
+        flex-direction: column
+
+    &__speed
+        align-items: flex-end
+    &__people
+        align-items: flex-start
+
+.block-text__text
+
+    &__stats-speed, &__stats-people
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 23px
+        text-align: right
+        letter-spacing: 0.03em
+        width: 260px
+    &__stats-speed
+        color: #FFFFFF
+    &__stats-people
+        color: #5E80FF
+        text-align: left
+
+@media (max-width: 991.98px)
+    .stats
+        &__speed
+            padding: 0 3.2em 0 0
+        &__people
+            padding: 0 0 0 3.2em
+
+@media (max-width: 767.98px)
+    .stats
+        &__speed
+            padding: 0 1.6em 0 .3em
+        &__people
+            padding: 0 .1em 0 1.6em
+    .block-text__text
+        &__stats-speed, &__stats-people
+            width: 155px
+
+@media (max-width: 479.98px)
+    .block-text__text
+        &__stats-speed, &__stats-people
+            font-size: 13px
+            width: 120px
+
+/*---------------------------------------------------------------*/
+.blog
+
+    &__container
+        height: 865px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__title
+        padding-bottom: 5%
+    &__content
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+    &__arrow
+        flex: 0 1 10%
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            height: 19px
+            width: 27px
+
+    &__group
+        flex: 0 1 80%
+        display: flex
+        background: #FFFFFF
+        border: 1px solid #D8E3FE
+        border-radius: 5px
+        box-sizing: border-box
+        box-shadow: 0px 15px 50px #EFF4FF
+
+    &__image
+        flex: 0 1 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0
+        img
+            width: 100%
+        a
+            height: 65px
+            width: 66px
+            position: absolute
+            z-index: 1
+    &__text-block
+        flex: 0 1 50%
+        padding: 40px 40px 40px 20px
+
+    &__button
+        width: 100%
+        padding: 40px 20px 0px 20px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+
+    &__circles
+        margin-top: 1%
+
+.block-text
+    &__text__blog
+        margin-top: 30px
+        text-align: justify
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 27px
+        letter-spacing: 0.03em
+        color: #8D96BD
+
+.button
+    &__text-only
+        display: flex
+        height: 47px
+        padding: auto
+        margin-left: 10%
+        font-family: Quicksand
+        font-style: normal
+        font-weight: bold
+        font-size: 13px
+        line-height: 16px
+        align-items: center
+        text-align: center
+        color: #A6B6DA
+    &__text-only:hover
+        color: #869bce
+
+@media (max-width: 767.98px)
+    .blog
+        &__group
+            flex-wrap: wrap-reverse
+            justify-content: center
+            padding: 10px
+        &__text-block
+            flex: 0 1 auto
+            padding: 10px
+        &__button
+            width: 100%
+            padding: 20px 20px 0px 20px
+        &__image
+            flex: 0 1 auto
+
+/*---------------------------------------------------------------*/
+
+.quotes
+
+    &__container
+        overflow: hidden
+        height: 479px
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%)
+
+    &__text-block
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        flex: 0 1 45%
+        padding: 0 5% 0 10%
+        h2
+            text-align: left
+
+    &__list
+
+        &__circles
+            display: flex
+            justify-content: center
+            align-items: center
+
+.block-text
+
+    &__text__quotes
+        text-align: left
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 23px
+        letter-spacing: 0.03em
+        color: #A4ABC8
+
+.list-quotes
+
+    &__body
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 423px
+        height: 206px
+        margin-right: -200px
+
+    &__content
+        flex: 0 1 40%
+        background: #FFFFFF
+        border: 1px solid #D8E3FE
+        box-sizing: border-box
+        box-shadow: 0px 5px 50px #F3F5FA
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        letter-spacing: 0.03em
+        color: #676F95
+        padding: 40px 60px 40px 60px
+        height: 175px
+
+    &__ave
+        z-index: 1
+        position: relative
+        top: -20%
+        width: 10%
+
+.hide
+    opacity: 0.45
+    filter: drop-shadow(0px 15px 50px #D4DCF1)
+
+    position: relative
+    left: 60%
+    display: block
+
+@media (max-width: 1280px)
+
+@media (max-width: 991.98px)
+    .quotes
+        &__container
+            flex-wrap: wrap
+            justify-content: center
+        &__text-block
+            padding: 2% 0 0 0
+
+@media (max-width: 768.98px)
+    .hide
+        display: none
+    .list-quotes
+        &__content
+            padding: 20px
+            width: 350px
+    .list-quotes__item
+        img
+            display: none
+
+@media (max-width: 479.98px)
+    .list-quotes
+        &__content
+            width: 290px
+
+/*---------------------------------------------------------------*/
+
+.faq
+    &__container
+        height: 964px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__title
+
+    &__list
+        padding: 5% 0 0 0
+
+    &__button
+        flex: 0 1 50%
+
+.list-faq
+    display: flex
+
+    &__body
+        flex: 0 1 90%
+
+    &__item
+
+    &__link
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        padding: 20px
+        img
+            width: 14px
+            height: 7px
+            margin: 10px
+
+    &__text-link
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 15px
+        line-height: 19px
+        display: flex
+        align-items: center
+        letter-spacing: 0.03em
+        color: #8E96B7
+
+    &__text-link__opened
+        font-family: Quicksand
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        line-height: 19px
+        display: flex
+        align-items: center
+        letter-spacing: 0.03em
+        color: #495274
+
+.list-faq__content
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-evenly
+
+.list-faq__text
+    flex: 0 1 50%
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 27px
+    letter-spacing: 0.03em
+    color: #8D96BD
+
+.button
+    &__grey
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 13px
+        line-height: 16px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        color: #7382A3
+        background-color: #E8ECF4
+        width: 195px
+        height: 43px
+
+@media (max-width: 768.98px)
+.list-faq__content
+    flex-wrap: wrap
+    gap: 15px
+.list-faq__text
+    flex: 0 1 80%
+
+/*---------------------------------------------------------------*/
+
+.get-started
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%)
+    &__container
+        background: url('../../images/src/get_started/clouds.svg') no-repeat center
+        background-size: 100%
+        height: 447px
+        display: flex
+
+        align-items: center
+
+    &__content
+
+    &__text-block
+        color: #FFFFFF
+        h4, h1
+            color: #FFFFFF
+
+    &__button
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 2%
+
+.block-text
+
+    &__text__get-started
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 29px
+        text-align: center
+        letter-spacing: 0.03em
+        padding: 20px 13%
+.button
+
+    &__white
+        background: #fff
+        color: #565F82
+
+    &__grey-border
+        width: 165px
+        color: #C7D3FF
+        border: 1px solid #A0B4FF
+        box-sizing: border-box
+        border-radius: 2px
+        height: 48px
+        width: 185px
+        font-family: Quicksand
+        font-style: normal
+        font-weight: 500
+        font-size: 13px
+        line-height: 16px
+        display: flex
+        align-items: center
+        text-align: center
+
+@media (max-width: 479.98px)
+    .button
+        &__grey-border
+            width: 150px
+
+/*---------------------------------------------------------------*/
+
+.newsletter
+
+    &__container
+        height: 332px
+        display: flex
+        justify-content: center
+
+    &__content
+        display: flex
+        justify-content: space-evenly
+        flex-direction: row
+        align-items: center
+
+    &__text-block
+        flex: 0 1 40%
+        text-align: left
+        h3
+            text-align: left
+            font-family: Quicksand
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+            color: #3D4F9F
+
+.block-text
+
+    &__text__newsletter
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 27px
+        letter-spacing: 0.03em
+        color: #8D96BD
+
+.newsletter__form
+
+.form
+    display: flex
+    flex-direction: row
+    flex: 0 1 60%
+    justify-content: center
+    gap: 2%
+
+    &__input
+
+    &__input-text
+
+        background: #EFEFF7
+        border-radius: 5px
+        width: 279px
+        height: 59px
+        padding: 20px
+
+.newsletter__button
+
+.button
+    &__deep-blue
+        width: 184px
+        height: 59px
+        font-family: Quicksand
+        font-style: normal
+        font-weight: bold
+        font-size: 13px
+        line-height: 16px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #FFFFFF
+        background: #4D6CE1
+        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2)
+        border-radius: 5px
+
+@media (max-width: 991.98px)
+    .newsletter
+        &__content
+            justify-content: center
+            flex-direction: column
+            align-items: center
+        &__text-block
+            flex: 0 1 50%
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+    .form
+        flex-direction: column
+        align-items: center
+
+    .button
+        &__deep-blue
+            margin: 20px 0
